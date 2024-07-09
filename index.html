@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f54b366955.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <nav>
+                <img src="images/logo-white.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i> -->
+                </ul>
+                <!-- <i id="menu-icon" class="fa-solid fa-bars" onclick="openmenu()"></i> -->
+            </nav>            
+        <div class="header-text">
+            <p>M A H A S I S W A</p>
+            <h1>Hi, I'm<span> Zidan</span><br>From Telkom University</h1>
+        </div>
+    </div>
+</div>
+<!-- About -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/cropped profile img.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Building websites</span><br>Designing and building website</li>
+                        <li><span>Adobe Premiere Pro</span><br>Editing and add visual effect on video</li>
+                        <li><span>AutoCAD</span><br>Make floor plans and building plans</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>This website</span><br>Design by own</li>
+                        <li><span>Mythical in MLBB</span><br>Hard carry is heeereee!</li>
+                        <li><span>Google Developer Club</span><br>Member of Google Developer Students Club Indonesia</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Telkom University</span><br>Students majoring in information systems in the undergraduate program class of 2023</li>
+                        <li><span>SMAQ Al-Ihsan</span><br>High School majoring in Quran and Hadith</li>
+                        <li><span>SMPIT Thariq Bin Ziyad</span><br>Islamic Boarding School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum Dolor Sit Amet</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-palette"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem Ipsum Dolor Sit Amet</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Gaming Pro</h2>
+                <p>Lorem Ipsum Dolor Sit Amet</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- portofolio ============== -->
+
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div id="work-list">
+            <div class="work">
+                <img src="images/wallpaper got (2).jpg">
+                <div class="layer">
+                    <h3>Ghost Of Tsushima</h3>
+                    <p>Just an ordinary samurai here</p>
+                    <a href="#"><i class="fa-solid fa-link" style="color: #63E6BE;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/download (4) (3).jpg">
+                <div class="layer">
+                    <h3>Indonesian Restaurant In Cyberpunk</h3>
+                    <p>I don't know is sayur asem available there</p>
+                    <a href="#"><i class="fa-solid fa-link" style="color: #63E6BE;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/download (2) (2).jpg">
+                <div class="layer">
+                    <h3>City with awesome neon light bloom</h3>
+                    <p>Yeaaa another image from Cyberpunk</p>
+                    <a href="#"><i class="fa-solid fa-link" style="color: #63E6BE;"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://steamcommunity.com/profiles/76561199087070985/screenshots/" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- COntact============ -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope" style="color: #63E6BE;"></i> elfarizidan@gmail.com</p>
+                <p><i class="fa-solid fa-address-book" style="color: #63E6BE;"></i> 0123455667</p>
+                <div class="social-icons">
+                    <a href="https://web.telegram.org/"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://store.steampowered.com/"><i class="fa-brands fa-steam"></i></a>
+                </div>
+                <a href="images/download.jpg" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Massage"rows="4" placeholder="Your Massage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>This webpage is personal education purpose only.</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<!-- <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    var menuIcon = document.getElementById("menu-icon");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+        menuIcon.style.display = "none"; // Hide menu icon when menu is open
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+        menuIcon.style.display = "block"; // Show menu icon when menu is closed
+    }
+
+</script> -->
+    
+</body>
+</html>
