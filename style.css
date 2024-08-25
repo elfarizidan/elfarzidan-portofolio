@@ -69,7 +69,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -93,7 +93,7 @@ nav ul li a:hover::after {
 .header-text {
     text-align: left; 
     margin-top: 20%; 
-    color: #000000; 
+    color: white; 
 }
 
 .header-text p {
@@ -107,8 +107,8 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-    color: white;
-    background-color: #000;
+    color: black;
+    background-color: white;
 }
 
 
