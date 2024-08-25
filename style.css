@@ -15,9 +15,11 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/bcbcb.jpg);
+    background-image: url(images/Untitled\ design\ \(1\).png);
     background-size: cover;
-    background-position: absolute;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #header:before{
@@ -27,14 +29,26 @@ body{
     height: 40vh;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to top, #1f1f1f, rgba(0,0,0,0));
+    background: linear-gradient(to top, #ffffff, rgba(0,0,0,0));
 }
 
 .container{
     padding: 10px 10%;
 }
 
-nav{
+#header {
+    background-color: #000; 
+    color: #fff; 
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,62 +57,67 @@ nav{
 
 nav ul {
     display: flex;
-    justify-content: right; /* Ensure the menu items align to the left */
+    justify-content: flex-start;
     padding-left: 0; 
+    margin: 0;
 }
 
-.logo{
-    width: 120px;
-}
-
-nav ul li{
+nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 0 20px; 
 }
 
-nav ul li a{
-    color: rgb(255, 255, 255);
+nav ul li a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
 
-nav ul li a::after{
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: aquamarine;
+    background: black;
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.5s;
+    transition: width 0.5s; 
 }
 
-nav ul li a:hover::after{
-    width: 100%;
+nav ul li a:hover::after {
+    width: 110%;
 }
 
-.header-text{
-    margin-top: 20%;
+.header-text {
+    text-align: left; 
+    margin-top: 20%; 
+    color: #000000; 
+}
+
+.header-text p {
     font-size: 30px;
+    margin: 0; 
 }
 
-.header-text h1{
+.header-text h1 {
     font-size: 60px;
-    margin-top: 20px;
+    margin: 20px 0 0; 
 }
 
-.header-text h1 span{
-    color: aquamarine;
+.header-text h1 span {
+    color: white;
+    background-color: #000;
 }
+
 
 /* About============ */
 
 #about{
     padding: 80px 0;
-    color: #ababab;
-    background-color: #1f1f1f;
+    color: black;
+    background-color: white;
 }
 
 .row{
@@ -110,7 +129,6 @@ nav ul li a:hover::after{
 .about-col-1{
     flex-basis: 35%;
     height: 480px;
-
 }
 
 .about-col-1 img{
@@ -125,7 +143,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #fff;
+    color: black;
 }
 
 .tab-titles{
@@ -145,7 +163,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: aquamarine;
+    background: black;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -153,7 +171,7 @@ nav ul li a:hover::after{
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -162,7 +180,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: aquamarine;
+    color: black;
     font-size: 14px;
 }
 
@@ -172,6 +190,16 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab{
     display: block;
+}
+
+.tab-contents.active-tab ul li span{
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tab-contents.active-tab ul li br{
+    font-weight: 300;
 }
 
 /* =============Services */
@@ -188,7 +216,8 @@ nav ul li a:hover::after{
 }
 
 .services-list div{
-    background-color: #1f1f1f;
+    background-color: white;
+    outline-color: black;
     padding: 10%;
     font-size: 13px;
     font-weight: 300;
@@ -199,35 +228,50 @@ nav ul li a:hover::after{
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
-    color: aquamarine;
+    color: black;
 }
 
 .services-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    color: black;
+}
+
+.services-list div p{
+    color: black;
 }
 
 .services-list div a {
     text-decoration: none;
-    color: #fff;
+    color: black;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover {
-    background: aquamarine;
+    background: black;
     transform: translateY(-10px);
-    color: #080808;
+    color: white;
+    outline-color: white ;
+    outline-style: outset;
 }
 
 .services-list div:hover i{
-    color: #080808;
+    color: white;
 }
 
 .services-list div:hover a {
-    color: #080808;
+    color: white;
+}
+
+.services-list div:hover h2{
+    color: gold;
+}
+
+.services-list div:hover p{
+    color: white;
 }
 
 
@@ -308,7 +352,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid aquamarine;
+    border: 1px solid white;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -316,8 +360,12 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 
+.btn-icon{
+    margin-right: 10px;
+}
+
 .btn:hover{
-    background: aquamarine;
+    background: white;
     color: black;
 }
 
@@ -417,3 +465,123 @@ nav ul li a:hover::after{
 }
 
 /* CSS for responsive============= */
+
+@media (max-width: 768px) {
+
+    #header {
+        height: 100; 
+        padding: 20px 0;
+        background-image: url(images/Untitled\ design\ \(2\).png);
+        background-size: cover;
+        background-position: left;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        padding: 0 10px; 
+    }
+
+    nav {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0; 
+    }
+
+    nav ul li a{
+        display: none;
+    }
+
+    .header-text {
+        margin-top: 90%;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .header-text p {
+        font-size: 20px; 
+    }
+
+    #header::before{
+        display: none;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        height: auto; 
+    }
+
+    .about-col-1 img{
+        width: 78%;
+        border-radius: 15px;
+    }
+
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .work img {
+        max-width: 100%;
+    }
+
+    #contact {
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .contact-left {
+        max-width: 100%; 
+    }
+
+    .contact-left p {
+        font-size: 16px;
+    }
+
+    .contact-left p i {
+        font-size: 1.5rem;
+    }
+
+    .social-icons a {
+        font-size: 30px; 
+    }
+
+    .btn {
+        padding: 10px 20px; 
+        font-size: 16px; 
+    }
+
+    .btn.btn2 {
+        padding: 8px 16px; 
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header-text h1 {
+        font-size: 30px; 
+    }
+
+    .contact-left p {
+        font-size: 14px; 
+    }
+
+    .contact-left p i {
+        font-size: 1.2rem; 
+    }
+
+    .social-icons a {
+        font-size: 24px; 
+    }
+}
