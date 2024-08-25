@@ -418,7 +418,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-    color: #63E6BE;
+    color: white;
     margin-right: 10px;
     font-size: 2rem;   
 }
@@ -436,16 +436,16 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-    color: #63E6BE;
+    color: gold;
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
     display: inline-block;
     background: rgba(0, 0, 0, 0);
-    color: #63E6BE;
+    color: #ffffff;
     padding: 10px 20px;  
-    border: 2px solid #63E6BE; 
+    border: 2px solid #ffffff; 
     text-transform: uppercase; 
     font-weight: bold;   
     margin-top: 20px;    
@@ -453,8 +453,8 @@ nav ul li a:hover::after {
 
 .btn.btn2:hover {
     color: #080808;
-    background: #63E6BE;
-    border-color: #63E6BE; 
+    background: #ffffff;
+    border-color: #ffffff; 
 }
 
 .copyright{
