@@ -146,6 +146,12 @@ nav ul li a:hover::after {
     color: black;
 }
 
+.sub-title-black{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -471,7 +477,7 @@ nav ul li a:hover::after {
     #header {
         height: 100; 
         padding: 20px 0;
-        background-image: url(images/Untitled\ design\ \(2\).png);
+        background-image: url(bc cropped.jpg);
         background-size: cover;
         background-position: left;
         background-attachment: fixed;
