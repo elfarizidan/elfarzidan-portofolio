@@ -79,7 +79,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: black;
+    background: white;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -87,7 +87,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-    width: 110%;
+    width: 100%;
 }
 
 .header-text {
